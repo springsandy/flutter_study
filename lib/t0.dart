@@ -37,8 +37,7 @@ class T0 extends ITextTest {
     final buffer = StringBuffer('$parse단\n');
     for (var i = 1; i <= 9; i++) {
       var multiply = parse * i;
-      buffer.write('$parse X $i = $multiply');
-      buffer.write('\n');
+      buffer.write('$parse X $i = $multiply\n');
     }
     return buffer.toString();
   }
