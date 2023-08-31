@@ -10,8 +10,7 @@ class T1 extends ITextTest {
     final output = <String>[];
 
     for (var col = 1; col <= 20; col++) {
-      var a = '♥' * col;
-      output.add('$a');
+      output.add('♥' * col);
     }
 
     return output;
