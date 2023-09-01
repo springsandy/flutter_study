@@ -4,8 +4,11 @@ class T0 extends ITextTest {
   @override
   String get authorName => 'sandy';
 
+  List<String> inputStrs = [];
+
   @override
   List<String> getOutput(Duration elapsed, Duration delta) {
+    //리스트 비었는지 확인
     if (inputStrs.isEmpty) {
       return ['', ''];
     }
@@ -21,12 +24,13 @@ class T0 extends ITextTest {
       }
     }
 
-    if (output.isEmpty) return [''];
+    //리스트 비었는지 확인
+    if (output.isEmpty) {
+      return [''];
+    }
 
     return output;
   }
-
-  List<String> inputStrs = [];
 
   @override
   void setInput(List<String> args) {
