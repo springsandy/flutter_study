@@ -9,7 +9,6 @@ class T2 extends ITextTest {
   @override
   void setInput(List<String> args) {}
 
-  Duration elapsed = Duration.zero;
   var twoDList = List<List>.generate(
       20, (index) => List<String>.generate(40, (index) => '_', growable: false),
       growable: false);
