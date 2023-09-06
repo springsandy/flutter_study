@@ -7,8 +7,8 @@ import 'package:lib/study_lib.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runTextTest(T0());
+  // runTextTest(T0());
   // runWidgetTest(W0());
   // runTextTest(T1());
-  // runTextTest(T2());
+  runTextTest(T2());
 }
