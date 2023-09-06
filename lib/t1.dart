@@ -3,7 +3,7 @@ import 'package:lib/study_lib.dart';
 
 class T1 extends ITextTest {
   @override
-  String get authorName => 'sandy';
+  String get authorName => 'BomI';
 
   @override
   List<String> getOutput(Duration elapsed, Duration delta) {

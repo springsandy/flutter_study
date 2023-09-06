@@ -2,7 +2,7 @@ import 'package:lib/study_lib.dart';
 
 class T0 extends ITextTest {
   @override
-  String get authorName => 'sandy';
+  String get authorName => 'BomI';
 
   List<String> inputStrs = [];
 

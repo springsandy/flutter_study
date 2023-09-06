@@ -7,7 +7,7 @@ import 'package:lib/study_lib.dart';
 
 class W0 extends IWidgetTest {
   @override
-  String get authorName => 'sandy';
+  String get authorName => 'BomI';
 
   @override
   StatefulWidget createWidget(BuildContext context, Key key) {
