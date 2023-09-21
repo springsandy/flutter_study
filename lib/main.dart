@@ -5,6 +5,7 @@ import 'package:flutter_package/t2.dart';
 import 'package:flutter_package/t3.dart';
 import 'package:flutter_package/w0.dart';
 import 'package:flutter_package/w1.dart';
+import 'package:flutter_package/w2.dart';
 import 'package:lib/study_lib.dart';
 
 void main() {
@@ -14,5 +15,6 @@ void main() {
   // runTextTest(T2());
   // runTextTest(T3());
   // runWidgetTest(W0());
-  runWidgetTest(W1());
+  // runWidgetTest(W1());
+  runWidgetTest(W2());
 }
