@@ -40,13 +40,17 @@ class _MyWidgetTestWidget extends State<MyWidgetTestWidget>
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    Color? random_color =
-        Colors.primaries[_random.nextInt(Colors.primaries.length)]
-            [_random.nextInt(9) * 100];
+    Color? random_color = Colors.red;
 
     return GestureDetector(
       onTap: () {
-        print("Click event on Container");
+        setState(() {
+          print('aaa');
+          random_color =
+              Colors.primaries[Random().nextInt(Colors.primaries.length)]
+                  [Random().nextInt(9) * 100];
+          print(random_color);
+        });
       },
       child: Container(
         width: width / 2,
