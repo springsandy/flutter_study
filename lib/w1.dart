@@ -25,7 +25,7 @@ class MyWidgetTestWidget extends StatefulWidget {
 class _MyWidgetTestWidget extends State<MyWidgetTestWidget>
     implements ITickerState {
   Duration elapsed = Duration.zero;
-  final _random = Random();
+  Color? random_color = Colors.red;
 
   @override
   void initState() {
@@ -40,16 +40,13 @@ class _MyWidgetTestWidget extends State<MyWidgetTestWidget>
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    Color? random_color = Colors.red;
 
     return GestureDetector(
       onTap: () {
         setState(() {
-          print('aaa');
           random_color =
               Colors.primaries[Random().nextInt(Colors.primaries.length)]
                   [Random().nextInt(9) * 100];
-          print(random_color);
         });
       },
       child: Container(
