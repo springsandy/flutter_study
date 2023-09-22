@@ -15,6 +15,6 @@ void main() {
   // runTextTest(T2());
   // runTextTest(T3());
   // runWidgetTest(W0());
-  runWidgetTest(W1());
-  // runWidgetTest(W2());
+  // runWidgetTest(W1());
+  runWidgetTest(W2());
 }

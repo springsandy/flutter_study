@@ -39,8 +39,62 @@ class _MyWidgetTestWidget extends State<MyWidgetTestWidget>
     double width = MediaQuery.of(context).size.width;
 
     return Center(
-      child: Text(
-        'Test ${elapsed.inMilliseconds}ms',
+      child: Container(
+        width: width / 2,
+        height: 80,
+        decoration: BoxDecoration(
+          color: Color.fromARGB(255, 185, 234, 255),
+          borderRadius: BorderRadius.circular(10),
+        ),
+        padding: const EdgeInsets.all(10),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              width: 70,
+              height: 70,
+              decoration: BoxDecoration(
+                color: Color.fromARGB(255, 209, 228, 255),
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Color.fromARGB(255, 49, 111, 174),
+                  width: 2,
+                ),
+              ),
+            ),
+            Container(
+              width: width / 2 * 0.7,
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    '냥냥이',
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 49, 111, 174),
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    '냐옹이는 귀여워',
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 112, 142, 154),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              width: width / 2 * 0.1,
+              child: const Icon(
+                Icons.arrow_forward,
+                size: 30,
+                color: Color.fromARGB(255, 49, 111, 174),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
