@@ -43,7 +43,7 @@ class _MyWidgetTestWidget extends State<MyWidgetTestWidget>
         width: width / 2,
         height: 80,
         decoration: BoxDecoration(
-          color: Color.fromARGB(255, 185, 234, 255),
+          color: const Color.fromARGB(255, 185, 234, 255),
           borderRadius: BorderRadius.circular(10),
         ),
         padding: const EdgeInsets.all(10),
@@ -54,17 +54,16 @@ class _MyWidgetTestWidget extends State<MyWidgetTestWidget>
               width: 70,
               height: 70,
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 209, 228, 255),
+                color: const Color.fromARGB(255, 209, 228, 255),
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: Color.fromARGB(255, 49, 111, 174),
+                  color: const Color.fromARGB(255, 49, 111, 174),
                   width: 2,
                 ),
               ),
             ),
-            Container(
-              width: width / 2 * 0.7,
-              child: const Column(
+            const Expanded(
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -85,7 +84,7 @@ class _MyWidgetTestWidget extends State<MyWidgetTestWidget>
                 ],
               ),
             ),
-            Container(
+            SizedBox(
               width: width / 2 * 0.1,
               child: const Icon(
                 Icons.arrow_forward,
